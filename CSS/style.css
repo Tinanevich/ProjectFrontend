@@ -1,0 +1,261 @@
+body {
+    background-color: #ebc4eb !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+/* body, html {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0 20px 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+      } */
+h1,h2 {
+    text-align: center;
+}
+/* .lighthouse { text-decoration: none !important;} */
+.main {
+    background-color: white;
+}
+.form {  /* форма */
+    margin: 0 auto !important; 
+    text-align: center !important;
+    width: 360px !important;
+    padding-top: 35px !important;
+}
+.shapes{ /* фон для формы */
+    background: url(../image/shugaring-nezhnii-5.jpg) center no-repeat;
+    height: 450px !important;
+    width: 100% !important; 
+}
+.map { /* карта */
+    display: flex;
+    height: 100%;
+    background-color: white ; 
+    flex-direction: column;
+}
+.wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    /* max-width: 865px; */
+    margin: 0 auto;
+}
+.navigation { /* шапка */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.nav { /* кнопки для шапки */
+    display: flex !important;
+    list-style-type: none !important;
+    padding-left: 0% !important;
+    /* font-weight: 865; */
+    text-transform: uppercase !important;
+    margin-bottom: 5px !important;
+    cursor: pointer !important;
+}
+.nav:hover { 
+    background-color: #dcdcdc !important;
+}
+.nav>li {
+    padding: 5px !important;
+    padding-left: 10px !important;
+    position: relative !important;
+}
+
+.nav>li>a {
+    text-decoration: none;
+    color: #494949;
+}
+.banner { /* услуги */
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: white ; 
+}
+.image {
+    float: left;
+    margin: 20px 40px 40px 20px;
+    width: 500px;
+}
+.spacer { /* распорка */
+    clear: both;
+}
+.services{ /* список оказываемых услуг */
+    font-size: large;
+    width: 100%;
+}
+.page {
+    display: flex;
+    align-items: center;
+    background-color: #e9e9e9;
+}
+.footer { /* подвал */
+    font-family: 'Montserrat', sans-serif !important;
+    text-align: center !important;
+}
+.social { /*иконки социальных сетей*/
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+.social .icon { /*иконки социальных сетей*/
+    margin: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.social .icon span {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    z-index: 2;
+    text-align: center;
+}
+.social .icon span a {
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 60px;
+}
+.social .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    opacity: 0;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.social .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.social .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.social .icon:hover span,
+.social .icon:hover .tooltip { 
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.social .instagram:hover span,
+.social .instagram:hover .tooltip,
+.social .instagram:hover .tooltip:before {
+    background: #FF9900;
+}
+.social .icon:hover span {
+    color: #fff;
+}
+.social .viber:hover span,
+.social .viber:hover .tooltip,
+.social .viber:hover .tooltip:before {
+    background: #800080;
+}
+.time {
+    list-style-type: none;
+    font-size: large;
+    text-align: center;
+}
+.table{
+    border: 1px solid #eee;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow-x:auto;
+    vertical-align: top;
+}
+.table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+    vertical-align: top;
+}
+.table td{
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: left;
+    vertical-align: top;
+}
+.table tbody tr:nth-child(odd){ /*цвет через строку */
+    background: #fff;
+}
+.table tbody tr:nth-child(even){
+    background: #F7F7F7;
+}
+.carousel-inner img { /*карусель */
+    width: 100%;
+    height: 100%;
+  }
+
+@media (max-width: 865px) {
+    .wrapper {
+        /* max-width: 700px; */
+        padding-left: 0px;
+        padding-right: 0px;
+        width: auto !important;
+        height: auto !important;}
+    /* .page {display: none;} */
+    .banner {flex-direction: column !important;
+        width: auto !important;}
+    .navigation {
+        display: flex;
+        flex-direction: column !important;
+        width: auto !important;
+        height: auto !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;}
+    .image {
+        float: none;
+        margin: 0 !important;
+        width: 100%;
+        height: 100% !important;}
+    .nav {
+        padding-inline-start: 0 !important;}    
+    .nav>li {
+        /* padding-left: 0px !important; */
+        margin-left: 0px !important;}
+    .services {
+        width: auto !important;
+        height: auto !important;
+        display: inline !important;
+        text-align: center !important;
+        padding-inline-start: 0 !important;
+        }
+    .shapes {
+        display: flex;
+        flex-direction: column !important;
+        width: auto !important;
+        height: auto !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding-top: none !important;
+    }
+    .preparation {
+        display: inline !important;
+        padding-inline-start: 0 !important;
+    }
+    .form {
+        width: 100% !important;
+    }
+}
+
